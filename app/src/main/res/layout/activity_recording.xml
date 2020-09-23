@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
     tools:context=".RecordingActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -16,8 +17,57 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:title="Заметка"
+            app:title="Новая заметка"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     </com.google.android.material.appbar.AppBarLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="@string/headNotes"
+        android:layout_margin="10dp"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/editSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:hint="@string/bodyNotes"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+         />
+    <CheckBox
+        android:id="@+id/checkDeadlineOn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/deadline"
+        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="@string/dline"
+            android:enabled="false"
+            android:layout_weight="6"/>
+        <ImageButton
+            android:id="@+id/imageBtnDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_baseline_today_24"/>
+    </LinearLayout>
+
+
+</LinearLayout>

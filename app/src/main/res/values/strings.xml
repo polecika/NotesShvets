@@ -19,4 +19,9 @@
     <string name="settings">Настройки</string>
     <string name="save">Сохранить</string>
     <string name="new_pin">New Pin</string>
+    <string name="subtitle">Заголовок</string>
+    <string name="headNotes">Загаловок заметки</string>
+    <string name="bodyNotes">Тело заметки</string>
+    <string name="deadline">Есть дедлайн</string>
+    <string name="dline">Дедлайн</string>
 </resources>

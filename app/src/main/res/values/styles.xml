@@ -19,4 +19,7 @@
     <style name="MarginButton">
         <item name="android:layout_margin">5dp</item>
     </style>
+    <style name="MarginFab">
+        <item name="android:layout_margin">20dp</item>
+    </style>
 </resources>
